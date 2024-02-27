@@ -4,6 +4,7 @@ import yemaya from "@/../public/myImage.jpeg";
 
 
 
+
 export default function Home() {
   return (
     <div>
