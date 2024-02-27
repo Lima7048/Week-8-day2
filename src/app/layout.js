@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import header from "./header"
+import Header from "./Header"
 import headerStyles from "./header.module.css";
 
 
@@ -14,9 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <header className={headerStyles.header}></header>
+      {/* <Header className={headerStyles.header}></Header> */}
       <body className={inter.className}>{children}</body>
-      <header className="bg-red-500 text-center">I'm red and centered</header>
+      <header className="bg-cyan-500 text-center"> African Diety : Goddess Yemaya</header>
 
     </html>
   );
