@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import header from "./header"
+import headerStyles from "./header.module.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <header className={headerStyles.header}></header>
       <body className={inter.className}>{children}</body>
+      <header className="bg-red-500 text-center">I'm red and centered</header>
+
     </html>
   );
 }
