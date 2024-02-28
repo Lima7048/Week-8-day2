@@ -1,13 +1,13 @@
-export async function generateMetadata({ params, searchParams }, parent) {
-  // load the post
-  const { rows: posts } =
-    await `https://jsonplaceholder.typicode.com/posts/${params.id}`;
-  const post = posts[0]; // get the first one
+// export async function generateMetadata({ params, searchParams }, parent) {
+//   // load the post
+//   const { rows: posts } =
+//     await `https://jsonplaceholder.typicode.com/posts/${params.id}`;
+//   const post = posts[0]; // get the first one
 
-  return {
-    title: post.title,
-  };
-}
+//   return {
+//     title: post.title,
+//   };
+// }
 
 export default async function Page({ params }) {
   const result = await fetch(

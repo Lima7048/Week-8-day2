@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./Header"
+// import Header from "./Header"
 import headerStyles from "./header.module.css";
 
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* <Header className={headerStyles.header}></Header> */}
       <body className={inter.className}>{children}</body>
-      <header className="bg-cyan-500 text-center"> African Diety : Goddess Yemaya</header>
+      <header className="bg-cyan-500 text-center"> African Dieties</header>
 
     </html>
   );
